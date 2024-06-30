@@ -12,10 +12,10 @@ To install from a release, reference a plugin manifest from a [release](https://
 spin plugins install --url https://github.com/fermyon/spin-trigger-command/releases/download/canary/trigger-command.json
 ```
 
-Alternatively, use the `spin pluginify` plugin to install from a fresh build. This will use the pluginify manifest (`spin-pluginify.toml`) to package the plugin and proceed to install it:
+Alternatively, use the [`spin pluginify`](https://github.com/itowlson/spin-pluginify) plugin to install from a fresh build. This will use the pluginify manifest (`spin-pluginify.toml`) to package the plugin and proceed to install it:
 
 ```sh
 spin plugins install pluginify
 cargo build --release
-spin pluginify install
+spin pluginify --install
 ```
